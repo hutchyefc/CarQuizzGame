@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Mobile Technology CW1</string>
+    <string name="Car_Game_Button">Car Game</string>
+    <string name="about_Button">About</string>
+    <string name="New_Car_Game_Button">New Car Game</string>
+    <string name="Car_Game_txtView">Car Game</string>
+    <string name="about_text">  StudentID: B00749060
+  \nStudentName: John Hutchman. \n
+  \n
+  \nI confirm that I understand what plagiarism is and have read the University’s policy on
+  \nplagiarism and understand the definition of plagiarism. The work that I have submitted
+  \nis entirely my own. Any work from other authors is duly referenced and acknowledged.
+  \nI understand that I may face sanctions in accordance with the policies and procedures
+  \nof the University</string>
+    <string name="identify_the_brand">Identify The Brand</string>
+    <string name="hints">Hints</string>
+    <string name="identify_the_car">Identify The Car</string>
+    <string name="advanced_level">Advanced Level</string>
+    <string name="btn_Car_Next">Next</string>
+    <string name="submit_hints">Submit</string>
+    <string name="enter_character_hints">Enter character</string>
+    <string name="textview_hints">TextView</string>
+    <string name="submit_Identify_the_brand">SUBMIT</string>
+    <string name="enter_car_brand1">Enter Car Brand</string>
+    <string name="enter_car_brand2">Enter Car Brand</string>
+    <string name="enter_car_brand3">Enter Car Brand</string>
+    <string name="submit_button_Advanced">Submit</string>
+    <string name="score_Advanced">Score 0 pts</string>
+</resources>

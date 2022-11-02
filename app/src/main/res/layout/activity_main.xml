@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".MainActivity">
+
+    <Button
+
+        android:id="@+id/buttonNewCarGame"
+        android:layout_width="206dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="48dp"
+
+        android:fontFamily="sans-serif-black"
+        android:text="@string/New_Car_Game_Button"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:iconTint="#F3EFEF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <FrameLayout
+
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="370dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAbout">
+
+    </FrameLayout>
+
+    <Button
+
+        android:id="@+id/buttonAbout"
+        android:layout_width="206dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="86dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/about_Button"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNewCarGame" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="206dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/Car_Game_txtView"
+        android:textColor="@color/blue"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNewCarGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

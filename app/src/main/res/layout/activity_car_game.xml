@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".CarGame">
+
+    <Button
+        android:id="@+id/identifyBrandBtn"
+        android:layout_width="206dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginBottom="94dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/identify_the_brand"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/hintsBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hintsBtn"
+        android:layout_width="206dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="94dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/hints"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/identifyCarBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/identifyBrandBtn" />
+
+    <Button
+        android:id="@+id/identifyCarBtn"
+        android:layout_width="206dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="94dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/identify_the_car"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/advancedBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hintsBtn" />
+
+    <Button
+        android:id="@+id/advancedBtn"
+        android:layout_width="206dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="125dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/advanced_level"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/identifyCarBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

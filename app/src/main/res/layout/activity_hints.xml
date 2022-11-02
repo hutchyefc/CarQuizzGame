@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".Hints">
+
+    <ImageView
+        android:id="@+id/imageViewCarHints"
+        android:layout_width="285dp"
+        android:layout_height="241dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="32sp"
+        android:id="@+id/textViewCarHints"
+        android:layout_width="206dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/textview_hints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCarHints" />
+
+    <Button
+        android:id="@+id/buttonSubmitHints"
+        android:layout_width="206dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginRight="102dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/submit_hints"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textViewCarHintAnswer"
+        android:layout_width="166dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="29dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSubmitHints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUserInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginRight="102dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="@string/enter_character_hints"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewhintsCorrectBrand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:id="@+id/textViewhintsCorrectBrand"
+        android:layout_width="165dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCarHintAnswer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
